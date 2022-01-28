@@ -11,15 +11,15 @@ draft: true
 status: draft
 ---
 
-Topics to discuss:
+Requests for Discussion (RFDs) are intended to enable open discussions about
+product enhancements, system design, and engineering practices.
 
-- metadata
-- state
-- workflow, branching strategy, approval
 
 <!--truncate-->
 
 ## Metadata
+
+> What metadata do we need to keep track of?
 
 - Authors
 - Date
@@ -36,8 +36,28 @@ Triple Dot RFDs use the following states:
 5. IMPLEMENTED
 6. ABANDONED
 
+`CREATED` - This is the state once an RFD has been created. It may never enter 
+this state in the index and should only be in this state when first created
+by the author.
+
+`DRAFT` - The RFD is being written by the author(s). It is not yet open for
+discussion.
+
+`DISCUSSION` - The RFD is open for discussion.
+
+`ACCEPTED` - The discussion is not longer open and the RFD has been accepted.
+
+`IMPLEMENETED` - Indicates that the RFD has been accepted and changes have been
+incorporated into the relevant product(s). Not all RFDs will enter this state.
+For example, this state won't be applicable to RFDs about best practices, 
+procedures, or workflows.
+
+`ABANDONED` - The RFD is no longer relevant and should be disregarded.
+
 
 ## Workflow
+
+> What workflow will the RFD state change follow?
 
 1. Allocate the RFD
     1. Create a branch called `allocate/<id>` where `<id>` is your RFD number.
@@ -56,3 +76,17 @@ Triple Dot RFDs use the following states:
     1. Discussion should be had in the PR
 1. Acceptance
     1. Once approved (process TBD), the PR will be merged and the discussion closed.
+
+
+## Tooling
+
+> What tooling do we need to support the above workflow?
+
+1. `rfd make`
+1. `rfd index`
+1. `rfd validate` 
+
+## See Also
+ 
+- https://github.com/joyent/rfd
+- https://oxide.computer/blog/rfd-1-requests-for-discussion
