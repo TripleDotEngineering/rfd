@@ -1,5 +1,6 @@
 ---
-slug: index
+slug: all
+draft: true
 ---
 
 # RFD Index
