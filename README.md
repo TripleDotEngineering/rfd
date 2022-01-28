@@ -3,16 +3,12 @@
 A Request for Discussion (RFD) is an open format for capturing and refining
 system designs, enhancements, and practices. 
 
-See 
-
 See also: 
 - https://github.com/joyent/rfd
 - https://oxide.computer/blog/rfd-1-requests-for-discussion
+-
 
-
-States:
-
-
+---
 
 
 ## How to Create an RFD
