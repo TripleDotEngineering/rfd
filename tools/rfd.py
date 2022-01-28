@@ -79,9 +79,10 @@ def subcommand_make(args):
     # Update the index
     fname = os.path.join('rfd', 'README.md')
     index = open(fname).read()
-    index += '\n| {id} | {created}  | [RFD {id} {name}](./{id}/index.md) |'.format(**params)
+    index += '\n| {id} | created  | [RFD {id} {name}](./{id}/index.md) |'.format(**params)
     open(fname, 'w').write(index)
     print(bold(green('OK')))
+
 
 class colors:
     magenta   = '\033[95m'
