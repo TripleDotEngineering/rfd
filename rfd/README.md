@@ -5,6 +5,7 @@ draft: true
 
 # RFD Index
 
-| ID   | State | Ttile |
-| :--- | :---  | : --- |
-| 0001 | created  | [RFD 0001 Request for Discussion](./rfd/0001/index.md) |
+| ID   | State | Title |
+| :--- | :---  | :---  |
+| 0001 | created  | [RFD 0001 Request for Discussion](./0001/index.md) |
+| 0002 | created  | [RFD 0002 Architecture State-of-the-Art](./0002/index.md) |
