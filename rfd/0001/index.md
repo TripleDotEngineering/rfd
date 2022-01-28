@@ -8,12 +8,17 @@ authors:
       url: https://github.com/josh-kaplan
 tags: ['rfd']
 draft: true
-status: created
+status: draft
 ---
 
-Your executive summary goes here.
+Topics to discuss:
+
+- metadata
+- state
+- workflow, branching strategy, approval
 
 <!--truncate-->
+
 
 ## Metadata
 
