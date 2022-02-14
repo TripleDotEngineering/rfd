@@ -89,28 +89,49 @@ stateDiagram-v2
 
 Allocate the RFD.
 
+RFDs are numbered starting at 1, and should be represented as zero-padded 4-digit 
+numbers. Use the `rfd.py` tool, to allocate a new RFD number and generate some 
+boiler-plate content from a template. To create a new RFD, run:
+
+```bash
+python tools/rfd.py make
+```
+
+This will prompt you for some basic information to fill out the initial metadata.
+Note, that GitHub username is used to identify the author. This enables us to
+more easily link the author URL to the person submitting the pull request.
+
+Then perform the following steps:
+
 1. Create a branch called `allocate/<id>` where `<id>` is your RFD number.
-1. Write a brief description for the RFD.
 1. Update the state metadata to `draft` and open a PR.
 1. Open a pull request against the `main` branch. Once accepted, this will 
     allocate the RFD number and place the RFD in the `draft` state.
 
+
 #### *DRAFT → DISCUSSION*
 
-Open for discussion.
+Open for discussion. First follow these steps to publish the draft:
 
 1. Created a branch of the format `draft/<id>`.
 1. Write the RFD
 1. Update the state to `discussion` and set draft to `false` and open a PR.
 1. This must be reviewed by at least 1 reviewer before approval.
-1. Once accepted, a new branch will be created `rfd/<id>` and a PR opened against `main`.
+
+Then, follow these steps to open the discussion:
+1. Create a new branch called `rfd/<id>`.
+1. Open a PR against `main`.
+
+This PR is the place to discuss the RFD.
+
 
 #### *DISCUSSION → ACCEPTED*
 
-Discussion and acceptance 
+Discussion and acceptance.
 
+1. Discussion should be had in the PR and the draft should be edited accordingly
 1. State metadata should be set to `accepted` 
-1. Discussion should be had in the PR
+1. 
 1. Once approved (process TBD), the PR will be merged and the discussion closed.
 
 #### *\* → ABANDONED*
