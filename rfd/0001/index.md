@@ -8,7 +8,7 @@ authors:
       url: https://github.com/josh-kaplan
 tags: ['rfd']
 draft: false
-status: discussion
+status: accepted
 ---
 
 Requests for Discussion (RFDs) are intended to enable open discussions about
