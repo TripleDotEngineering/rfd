@@ -9,5 +9,5 @@ draft: true
 
 | ID   | State | Title |
 | :--- | :---  | :---  |
-| 0001 | created  | [RFD 0001 Request for Discussion](./0001/index.md) |
-| 0002 | created  | [RFD 0002 Architecture State-of-the-Art and Critical Gaps](./0002/index.md) |
+| 0001 | discussion | [RFD 0001 Request for Discussion](./0001/index.md) |
+| 0002 | draft  | [RFD 0002 Architecture State-of-the-Art and Critical Gaps](./0002/index.md) |
