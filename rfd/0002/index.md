@@ -1,8 +1,8 @@
 ---
-title: "RFD-0002: Architecture State-of-the-Art"
+title: "RFD-0002 Architecture State-of-the-Art and Critical Gaps"
 description: >
-    RFD-0002 - TODO
-date: 2022-01-28
+    RFD-0002 Architecture State-of-the-Art and Critical Gaps
+date: 2022-02-14
 authors: 
     - name: Josh Kaplan
       url: https://github.com/josh-kaplan

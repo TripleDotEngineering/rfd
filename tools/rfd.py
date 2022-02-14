@@ -81,7 +81,7 @@ def subcommand_make(args):
     index = open(fname).read()
     index += '\n| {id} | created  | [RFD {id} {title}](./{id}/index.md) |'.format(**params)
     open(fname, 'w').write(index)
-    print(bold(green('OK')))
+    print(bold(green(f'CREATED. Your RFD number is {rfd_id}')))
 
 
 class colors:
